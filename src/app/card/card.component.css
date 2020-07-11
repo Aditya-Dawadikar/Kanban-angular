@@ -1,0 +1,47 @@
+.card {
+    width: 350px;
+    min-height: 200px;
+    background-color: white;
+    margin: 25px;
+    position: relative;
+    box-shadow: 5px 10px 10px #888888;
+    transition: scale 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-body {
+    width: 320px;
+    min-height: 100px;
+    margin: 15px;
+    background-color: #f0f6fc;
+    position: absolute;
+    color: #2b6fa6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-body p {
+    margin: 10px;
+}
+
+.cancel-button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: url('../../assets/close.svg');
+    background-repeat: no-repeat;
+    right: -20px;
+    top: -20px;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: scale 0.5s ease-out, opacity 0.1s ease;
+}
+
+.cancel-button:hover {
+    opacity: 1;
+    transform: scale(1);
+}
