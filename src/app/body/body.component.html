@@ -1,4 +1,8 @@
 <div class="container">
-    <app-column></app-column>
-    <!--<app-add-column></app-add-column>-->
+    <ul class="column-container">
+        <li *ngFor="let column of Columns">
+            <app-column (deleteColumn)="deleteColumn(column)"></app-column>
+        </li>
+    </ul>
+    <app-add-column (click)="addColumn()"></app-add-column>
 </div>

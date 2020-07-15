@@ -1,5 +1,5 @@
 <div class="card">
-    <div class="cancel-button"></div>
+    <div class="cancel-button" (click)="deleteCard.emit(card)"></div>
     <div class="card-body">
         <p>{{card.task}}</p>
     </div>

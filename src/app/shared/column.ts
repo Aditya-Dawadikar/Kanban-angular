@@ -1,5 +1,5 @@
-import {card} from './card';
+import {Card} from './card';
 
-export interface column{
-  cards:card[];
+export interface Column{
+  cards:Card[];
 }

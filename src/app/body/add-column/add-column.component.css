@@ -26,13 +26,10 @@
     box-shadow: 5px 10px 10px #888888;
 }
 
-.add-column-button:hover {
-    transform: scale(1);
-}
-
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     color: #8a8e91;
     position: absolute;
+    top: 400px;
 }

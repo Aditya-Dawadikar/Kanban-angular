@@ -1,14 +1,13 @@
 <div class="column">
     <div class="column-header">Todo
-        <div class="cancel-button"></div>
-        <img src="../../assets/plus.svg" class="add">
+        <div class="cancel-button" (click)="deleteColumn.emit()"></div>
+        <img src="../../assets/plus.svg" class="add" (click)="addCard()">
     </div>
     <div class="column-body">
-        <!--<ul style="list-style: none;">
+        <ul class="card-container">
             <li *ngFor="let card of cards">
-                <app-card>{{card}}</app-card>
+                <app-card [card]=card (deleteCard)="deleteCard(card)"></app-card>
             </li>
-        </ul>-->
-        <app-card></app-card>
+        </ul>
     </div>
 </div>

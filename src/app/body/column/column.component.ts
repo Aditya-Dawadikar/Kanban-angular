@@ -1,5 +1,8 @@
-import { Component, OnInit,Output } from '@angular/core';
+import { Component, OnInit,Output, EventEmitter, Input } from '@angular/core';
 import {CardComponent} from './card/card.component';
+import {CARDS} from '../../shared/mock-card';
+import {Card} from '../../shared/card';
+import {Column} from '../../shared/column';
 
 @Component({
   selector: 'app-column',
@@ -8,11 +11,29 @@ import {CardComponent} from './card/card.component';
 })
 export class ColumnComponent implements OnInit {
 
-  @Output() task="hello duniya";
+  cards=CARDS;
+
+  col:Column;
+
+  @Output() deleteColumn = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  addCard(){
+    this.cards.push({
+      task:"new task",
+      id:100
+    })
+  }
+
+  deleteCard(card){
+    this.cards.pop();
+  }
+
+  cancelButton(){
+    this.cards.pop();
+  }
 }

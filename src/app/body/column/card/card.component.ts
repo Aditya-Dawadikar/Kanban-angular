@@ -1,4 +1,4 @@
-import { Component, OnInit ,Input} from '@angular/core';
+import { Component, OnInit ,Input, Output, EventEmitter} from '@angular/core';
 import {Card} from '../../../shared/card';
 import {ColumnComponent} from '../column.component';
 
@@ -10,12 +10,9 @@ import {ColumnComponent} from '../column.component';
 
 export class CardComponent implements OnInit{
 
-  @Input() taskDescription:string;
+  @Input() card:Card;
 
-  card:Card={
-    task:this.taskDescription
-  }
-
+  @Output() deleteCard = new EventEmitter();
 
   constructor() {}
 

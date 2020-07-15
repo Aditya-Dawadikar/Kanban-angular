@@ -3,3 +3,10 @@
     height: 700px;
     display: flex;
 }
+
+.column-container {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

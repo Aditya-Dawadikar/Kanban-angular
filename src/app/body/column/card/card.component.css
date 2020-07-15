@@ -8,10 +8,6 @@
     transition: scale 0.2s ease;
 }
 
-.card:hover {
-    transform: scale(1.1);
-}
-
 .card-body {
     width: 320px;
     min-height: 100px;

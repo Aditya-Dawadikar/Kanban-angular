@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import {BodyComponent} from '../body.component';
+import { ColumnComponent } from '../column/column.component';
+import {Column} from '../../shared/column';
 
 @Component({
   selector: 'app-add-column',
