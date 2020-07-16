@@ -9,7 +9,7 @@ const routes: Routes = [
   {path:'kanban',component:BodyComponent},
   {path:'newcard',component:CardModalComponent},
   {path:'newcolumn',component:ColumnModalComponent},
-  {path:'login',component:LoginComponent},
+  {path:'',component:LoginComponent},
   {path:'signup',component:SignupComponent}
 ];
 

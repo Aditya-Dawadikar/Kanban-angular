@@ -1,6 +1,5 @@
 <div class="card-modal" [class.hide]="tohide">
-
-    <a routerLink="/" routerLinkActive="active">
+    <a routerLink="/kanban" routerLinkActive="active">
         <div class="cancel-button"></div>
     </a>
 
@@ -10,11 +9,11 @@
             <input type="text" name="task" class="modal-input" #task>
         </div>
         <div class="form-group">
-            <label>Id</label><br>
-            <input type="text" name="id" class="modal-input" #id>
+            <label>Column Name</label><br>
+            <input type="text" name="columnName" class="modal-input" #columnName>
         </div>
         <br>
-        <a routerLink="/kanban" routerLinkActive="active"><button class="submit-card" (click)="createCard(task.value,id.value)">Add Card</button></a>
+        <a routerLink="/kanban" routerLinkActive="active"><button class="submit-card" (click)="createCard(columnName.value,task.value)">Add Card</button></a>
         <br>
     </form>
 </div>

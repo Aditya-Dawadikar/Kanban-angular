@@ -22,9 +22,9 @@ export class CardModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createCard(task,id){
+  createCard(columnName,task){
     this.newCard.task=task;
-    this.newCard.id=id;
+    this.newCard.columnName=columnName;
     CARDS.push(this.newCard);
   }
 

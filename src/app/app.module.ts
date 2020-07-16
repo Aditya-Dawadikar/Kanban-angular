@@ -7,11 +7,12 @@ import { HeaderComponent } from './header/header.component';
 import { ColumnComponent } from './body/column/column.component';
 import { BodyComponent } from './body/body.component';
 import { CardComponent } from './body/column/card/card.component';
-import { AddColumnComponent } from './body/add-column/add-column.component';
+import { AddColumnComponent } from './add-column/add-column.component';
 import { CardModalComponent } from './card-modal/card-modal.component';
 import { ColumnModalComponent } from './column-modal/column-modal.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { AddCardFloatComponent } from './add-card-float/add-card-float.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SignupComponent } from './signup/signup.component';
     CardModalComponent,
     ColumnModalComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    AddCardFloatComponent
   ],
   imports: [
     BrowserModule,
