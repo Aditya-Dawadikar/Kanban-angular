@@ -3,6 +3,12 @@ import {Card} from './card';
 import {CARDS} from './mock-card';
 
 export const COLUMNS:Column[]=[
-  {cards:CARDS},
-  {cards:CARDS}
+  {
+    columnName:"Todo",
+    cards:CARDS
+  },
+  {
+    columnName:"Done",
+    cards:CARDS
+  }
 ];

@@ -11,6 +11,7 @@ import {CARDS} from '../shared/mock-card';
 export class CardModalComponent implements OnInit {
 
   newCard={
+    columnName:"Todo",
     task:"new task",
     id:3
   };

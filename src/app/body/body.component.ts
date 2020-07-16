@@ -19,7 +19,10 @@ export class BodyComponent implements OnInit {
 
   addColumn(){
     this.Columns.push(
-      {cards:CARDS}
+      {
+        columnName:"new Column",
+        cards:CARDS
+      }
     )
   }
 

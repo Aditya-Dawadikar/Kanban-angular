@@ -13,6 +13,7 @@ export class ColumnComponent implements OnInit {
 
   card:Card;
   cards=CARDS;
+  columnName="ColumnName";
 
   col:Column;
 
@@ -22,13 +23,6 @@ export class ColumnComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  addCard(){
-    /*this.cards.push({
-      task:"new task",
-      id:100
-    })*/
   }
 
   deleteCard(card){

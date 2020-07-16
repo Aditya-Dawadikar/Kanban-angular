@@ -18,6 +18,7 @@ export class ColumnModalComponent implements OnInit {
   }
 
   newColumn={
+    columnName:"new Column",
     cards:[]
   }
 
