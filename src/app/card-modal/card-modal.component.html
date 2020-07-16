@@ -4,7 +4,7 @@
         <div class="cancel-button"></div>
     </a>
 
-    <form action="submit" class="new-card-form">
+    <form class="new-card-form">
         <div class="form-group">
             <label>Task</label><br>
             <input type="text" name="task" class="modal-input">
@@ -13,7 +13,7 @@
             <label>Id</label><br>
             <input type="text" name="id" class="modal-input">
         </div><br>
-        <a routerLink="/" routerLinkActive="active"><button class="submit-card">Add Card</button></a>
+        <a routerLink="/" routerLinkActive="active"><button class="submit-card" (click)="createCard()">Add Card</button></a>
         <br>
     </form>
 </div>

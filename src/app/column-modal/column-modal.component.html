@@ -1,0 +1,15 @@
+<div class="card-modal" [class.hide]="tohide" (addColumn)="createColumn()">
+
+    <a routerLink="/" routerLinkActive="active">
+        <div class="cancel-button"></div>
+    </a>
+
+    <form class="new-card-form">
+        <div class="form-group">
+            <label>Column Name</label><br>
+            <input type="text" name="column" class="modal-input">
+        </div><br>
+        <a routerLink="/" routerLinkActive="active"><button class="submit-card" (click)="createColumn()">Add Column</button></a>
+        <br>
+    </form>
+</div>

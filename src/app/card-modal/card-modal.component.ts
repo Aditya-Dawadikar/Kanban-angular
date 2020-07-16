@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {Card} from '../shared/card';
 import {ColumnComponent} from '../body/column/column.component';
+import {CARDS} from '../shared/mock-card';
 
 @Component({
   selector: 'app-card-modal',
@@ -9,7 +10,10 @@ import {ColumnComponent} from '../body/column/column.component';
 })
 export class CardModalComponent implements OnInit {
 
-  newCard:Card;
+  newCard={
+    task:"new task",
+    id:3
+  };
 
   showclass:"show";
   hideClass:"hide";
@@ -22,7 +26,7 @@ export class CardModalComponent implements OnInit {
   }
 
   createCard(){
-    this.tohide=false;
+    CARDS.push(this.newCard);
   }
 
   hideModal(){
