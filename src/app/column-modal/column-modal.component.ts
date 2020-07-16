@@ -28,8 +28,12 @@ export class ColumnModalComponent implements OnInit {
   public tohide=false;
 
   createColumn(columnName){
-    this.newColumn.columnName=columnName;
-    COLUMNS.push(this.newColumn);
+    if(columnName!=""){
+      this.newColumn.columnName=columnName;
+      COLUMNS.push(this.newColumn);
+    }else{
+      alert("Column must be named");
+    }
   }
 
   hideModal(){

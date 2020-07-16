@@ -23,9 +23,13 @@ export class CardModalComponent implements OnInit {
   }
 
   createCard(columnName,task){
-    this.newCard.task=task;
+    if(columnName!=""){
+      this.newCard.task=task;
     this.newCard.columnName=columnName;
     CARDS.push(this.newCard);
+    }else{
+      alert("Card must belong to a column");
+    }
   }
 
 }
