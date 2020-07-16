@@ -24,7 +24,10 @@ export class ColumnComponent implements OnInit {
   }
 
   deleteCard(card){
-    this.cards.pop();
+    let index=this.cards.indexOf(card);
+    console.log("index:"+index);
+    this.cards.splice(index,1);
+    console.log(this.cards);
   }
 
   cancelButton(){

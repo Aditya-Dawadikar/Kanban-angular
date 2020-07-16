@@ -20,7 +20,8 @@ export class BodyComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  deleteColumn(){
-    this.Columns.pop();
+  deleteColumn(column){
+    let index=this.Columns.indexOf(column);
+    this.Columns.splice(index,1);
   }
 }
