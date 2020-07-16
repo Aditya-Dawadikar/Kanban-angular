@@ -11,11 +11,13 @@ import {Column} from '../../shared/column';
 })
 export class ColumnComponent implements OnInit {
 
+  card:Card;
   cards=CARDS;
 
   col:Column;
 
   @Output() deleteColumn = new EventEmitter();
+  @Output() addCardEmitter = new EventEmitter();
 
   constructor() { }
 
@@ -23,10 +25,10 @@ export class ColumnComponent implements OnInit {
   }
 
   addCard(){
-    this.cards.push({
+    /*this.cards.push({
       task:"new task",
       id:100
-    })
+    })*/
   }
 
   deleteCard(card){

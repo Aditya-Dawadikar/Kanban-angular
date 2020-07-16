@@ -8,6 +8,7 @@ import { ColumnComponent } from './body/column/column.component';
 import { BodyComponent } from './body/body.component';
 import { CardComponent } from './body/column/card/card.component';
 import { AddColumnComponent } from './body/add-column/add-column.component';
+import { CardModalComponent } from './card-modal/card-modal.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AddColumnComponent } from './body/add-column/add-column.component';
     ColumnComponent,
     BodyComponent,
     CardComponent,
-    AddColumnComponent
+    AddColumnComponent,
+    CardModalComponent
   ],
   imports: [
     BrowserModule,

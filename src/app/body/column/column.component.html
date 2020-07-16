@@ -1,7 +1,8 @@
 <div class="column">
     <div class="column-header">Todo
         <div class="cancel-button" (click)="deleteColumn.emit()"></div>
-        <img src="../../assets/plus.svg" class="add" (click)="addCard()">
+        <a routerLink="/newcard" routerLinkActive="active"><img src="../../assets/plus.svg" class="add"></a>
+
     </div>
     <div class="column-body">
         <ul class="card-container">

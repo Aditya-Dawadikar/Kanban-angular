@@ -1,8 +1,10 @@
 <div class="container">
+    <!--<app-card-modal></app-card-modal>-->
     <ul class="column-container">
         <li *ngFor="let column of Columns">
             <app-column (deleteColumn)="deleteColumn(column)"></app-column>
         </li>
     </ul>
     <app-add-column (click)="addColumn()"></app-add-column>
+
 </div>
