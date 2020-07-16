@@ -11,7 +11,6 @@ import {ColumnComponent} from '../column.component';
 export class CardComponent implements OnInit{
 
   @Input() card:Card;
-
   @Output() deleteCard = new EventEmitter();
 
   constructor() {}

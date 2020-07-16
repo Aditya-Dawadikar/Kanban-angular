@@ -3,6 +3,7 @@ import {CardComponent} from './card/card.component';
 import {CARDS} from '../../shared/mock-card';
 import {Card} from '../../shared/card';
 import {Column} from '../../shared/column';
+import {BodyComponent} from '../body.component';
 
 @Component({
   selector: 'app-column',
@@ -11,14 +12,11 @@ import {Column} from '../../shared/column';
 })
 export class ColumnComponent implements OnInit {
 
-  card:Card;
   cards=CARDS;
-  columnName="ColumnName";
-
-  col:Column;
 
   @Output() deleteColumn = new EventEmitter();
   @Output() addCardEmitter = new EventEmitter();
+  @Input() column:Column;
 
   constructor() { }
 

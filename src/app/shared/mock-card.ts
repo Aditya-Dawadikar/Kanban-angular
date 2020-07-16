@@ -1,5 +1,6 @@
 import {Card} from './card';
 
+/*
 export const CARDS:Card[]=[
   {
     columnName:"Todo",
@@ -19,3 +20,5 @@ export const CARDS:Card[]=[
     id:4
   }
 ];
+*/
+export const CARDS:Card[]=[];

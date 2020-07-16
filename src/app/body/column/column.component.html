@@ -1,8 +1,7 @@
 <div class="column">
-    <div class="column-header">{{columnName}}
+    <div class="column-header">{{column.columnName}}
         <div class="cancel-button" (click)="deleteColumn.emit()"></div>
         <a routerLink="/newcard" routerLinkActive="active"><img src="../../assets/plus.svg" class="add"></a>
-
     </div>
     <div class="column-body">
         <ul class="card-container">

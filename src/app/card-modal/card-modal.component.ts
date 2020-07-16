@@ -12,13 +12,9 @@ export class CardModalComponent implements OnInit {
 
   newCard={
     columnName:"Todo",
-    task:"new task",
-    id:3
+    task:"",
+    id:0
   };
-
-  showclass:"show";
-  hideClass:"hide";
-
   public tohide=false;
 
   constructor() { }
@@ -26,12 +22,10 @@ export class CardModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createCard(){
+  createCard(task,id){
+    this.newCard.task=task;
+    this.newCard.id=id;
     CARDS.push(this.newCard);
-  }
-
-  hideModal(){
-    this.tohide=true;
   }
 
 }

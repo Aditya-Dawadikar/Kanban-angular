@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {AddColumnComponent} from './add-column/add-column.component';
 import {COLUMNS} from '../shared/mock-column';
 import { Column } from '../shared/column';
@@ -10,20 +10,14 @@ import {CARDS} from '../shared/mock-card';
 })
 export class BodyComponent implements OnInit {
 
+  @Output() columnEmitter= new EventEmitter();
+
   Columns=COLUMNS;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
   }
 
-  addColumn(){
-    this.Columns.push(
-      {
-        columnName:"new Column",
-        cards:CARDS
-      }
-    )
+  ngOnInit(): void {
   }
 
   deleteColumn(){

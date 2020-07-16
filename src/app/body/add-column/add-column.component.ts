@@ -15,4 +15,8 @@ export class AddColumnComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addColumn(){
+
+  }
+
 }
