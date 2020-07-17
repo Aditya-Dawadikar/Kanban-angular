@@ -1,6 +1,7 @@
 import {Column} from './column';
 import {Card} from './card';
 import {CARDS} from './mock-card';
+
 /*
 export const COLUMNS:Column[]=[
   {
@@ -9,6 +10,10 @@ export const COLUMNS:Column[]=[
   },
   {
     columnName:"Done",
+    cards:CARDS
+  },
+  {
+    columnName:"Issues",
     cards:CARDS
   }
 ];

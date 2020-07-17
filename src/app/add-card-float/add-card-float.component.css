@@ -4,13 +4,18 @@
     position: absolute;
     background-color: #e4eaf0;
     top: 60px;
-    right: 0;
+    right: -8%;
     padding: 20px;
     z-index: 2;
     display: flex;
     border-top-left-radius: 20px;
     margin: 5px 0px;
     border-bottom-left-radius: 20px;
+    transition: right 0.2s ease;
+}
+
+.float-container:hover {
+    right: 0;
 }
 
 .add-column-button {
@@ -21,7 +26,11 @@
     position: absolute;
     top: 22%;
     opacity: 0.5;
-    transform: scale(0.9);
+    transition: rotate 2s ease-in-out;
+}
+
+.add-column-button:hover {
+    transform: rotate(45deg);
 }
 
 p {

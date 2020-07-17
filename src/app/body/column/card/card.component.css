@@ -7,16 +7,16 @@
     box-shadow: 5px 10px 10px #888888;
     transition: scale 0.2s ease;
     border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card-body {
     width: 320px;
-    min-height: 100px;
+    min-height: 60px;
     margin: 15px;
     background-color: #f0f6fc;
     position: absolute;
     color: #2b6fa6;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card-body p {
@@ -41,4 +41,32 @@
 .cancel-button:hover {
     opacity: 1;
     transform: scale(1);
+}
+
+.status-container {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    color: #2b6fa6;
+    display: flex;
+}
+
+.status-code {
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    bottom: 8px;
+}
+
+.complete {
+    background-color: #a2fca8;
+}
+
+.issue {
+    background-color: #ff4a62;
+    color: white;
+}
+
+.incomplete {
+    background-color: #f5f576;
 }

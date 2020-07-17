@@ -3,4 +3,8 @@
     <div class="card-body">
         <p>{{card.task}}</p>
     </div>
+    <div class="status-container">
+        Status:
+        <div class="status-code" [ngClass]="{'complete':card.status==='complete','incomplete':card.status==='incomplete','issue':card.status==='issue'}">{{card.status}}</div>
+    </div>
 </div>

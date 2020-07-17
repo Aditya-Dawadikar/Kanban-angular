@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import {Card} from '../shared/card';
 import {ColumnComponent} from '../body/column/column.component';
 import {CARDS} from '../shared/mock-card';
+import { COLUMNS } from '../shared/mock-column';
 
 @Component({
   selector: 'app-card-modal',
@@ -13,7 +14,7 @@ export class CardModalComponent implements OnInit {
   newCard={
     columnName:"Todo",
     task:"",
-    id:0
+    status:""
   };
   public tohide=false;
 
@@ -22,11 +23,15 @@ export class CardModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createCard(columnName,task){
+  createCard(columnName,task,status){
+    if(COLUMNS.length===0){
+      alert("you must add a column first!");
+    }else
     if(columnName!=""){
       this.newCard.task=task;
-    this.newCard.columnName=columnName;
-    CARDS.push(this.newCard);
+      this.newCard.columnName=columnName;
+      this.newCard.status=status;
+      CARDS.push(this.newCard);
     }else{
       alert("Card must belong to a column");
     }

@@ -4,7 +4,7 @@
     position: absolute;
     background-color: #e4eaf0;
     top: 0;
-    right: 0;
+    right: -8%;
     margin-top: 10px;
     padding: 20px;
     z-index: 2;
@@ -12,6 +12,11 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     margin-left: 50px;
+    transition: right 0.2s ease;
+}
+
+.add-column:hover {
+    right: 0;
 }
 
 .add-column-button {
@@ -22,7 +27,11 @@
     position: absolute;
     top: 22%;
     opacity: 0.5;
-    transform: scale(0.9);
+    transition: rotate 2s ease-in-out;
+}
+
+.add-column-button:hover {
+    transform: rotate(45deg);
 }
 
 p {
