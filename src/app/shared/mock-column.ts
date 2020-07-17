@@ -6,15 +6,18 @@ import {CARDS} from './mock-card';
 export const COLUMNS:Column[]=[
   {
     columnName:"Todo",
-    cards:CARDS
+    cards:CARDS,
+    columnType:"Todo"
   },
   {
     columnName:"Done",
-    cards:CARDS
+    cards:CARDS,
+    columnType:"Issues"
   },
   {
     columnName:"Issues",
-    cards:CARDS
+    cards:CARDS,
+    columnType:"Completed"
   }
 ];
 */

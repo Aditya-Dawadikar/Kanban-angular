@@ -12,12 +12,14 @@
             <label>Column Name</label><br>
             <input type="text" name="columnName" class="modal-input" #columnName>
         </div>
-        <div class="form-group">
+        <!--
+          <div class="form-group">
             <label>Card Status</label><br>
             <input type="text" name="status" class="modal-input" #status>
         </div>
+        -->
         <br>
-        <a routerLink="/kanban" routerLinkActive="active"><button class="submit-card" (click)="createCard(columnName.value,task.value,status.value)">Add Card</button></a>
+        <a routerLink="/kanban" routerLinkActive="active"><button class="submit-card" (click)="createCard(columnName.value,task.value)">Add Card</button></a>
         <br>
     </form>
 </div>

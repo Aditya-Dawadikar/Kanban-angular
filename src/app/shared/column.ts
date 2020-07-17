@@ -1,6 +1,7 @@
 import {Card} from './card';
 
 export interface Column{
-  columnName:String;
+  columnName:string;
+  columnType:string;
   cards:Card[];
 }

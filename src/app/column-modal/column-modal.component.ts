@@ -19,7 +19,8 @@ export class ColumnModalComponent implements OnInit {
 
   newColumn={
     columnName:"",
-    cards:[]
+    cards:[],
+    columnType:""
   }
 
   showclass:"show";
@@ -27,9 +28,10 @@ export class ColumnModalComponent implements OnInit {
 
   public tohide=false;
 
-  createColumn(columnName){
+  createColumn(columnName,columnType){
     if(columnName!=""){
       this.newColumn.columnName=columnName;
+      this.newColumn.columnType=columnType;
       COLUMNS.push(this.newColumn);
     }else{
       alert("Column must be named");

@@ -23,14 +23,17 @@ export class CardModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createCard(columnName,task,status){
+  createCard(columnName,task){
     if(COLUMNS.length===0){
       alert("you must add a column first!");
     }else
     if(columnName!=""){
       this.newCard.task=task;
       this.newCard.columnName=columnName;
-      this.newCard.status=status;
+
+      let index = COLUMNS.findIndex(column => column.columnName ===columnName);
+      this.newCard.status=COLUMNS[index].columnType;
+      //console.log(this.newCard.status);
       CARDS.push(this.newCard);
     }else{
       alert("Card must belong to a column");
