@@ -8,18 +8,20 @@
             <label>Task</label><br>
             <input type="text" name="task" class="modal-input" #task>
         </div>
+        <!--
         <div class="form-group">
             <label>Column Name</label><br>
             <input type="text" name="columnName" class="modal-input" #columnName>
         </div>
-        <!--
-          <div class="form-group">
-            <label>Card Status</label><br>
-            <input type="text" name="status" class="modal-input" #status>
-        </div>
         -->
+        <div class="form-group">
+            <label>Column Name</label><br>
+            <select class="select" name="selectColumn" #selectColumn>
+              <option class="option" *ngFor="let column of COLUMNS" value={{column.columnName}}>{{column.columnName}}</option>
+            </select>
+        </div>
         <br>
-        <a routerLink="/kanban" routerLinkActive="active"><button class="submit-card" (click)="createCard(columnName.value,task.value)">Add Card</button></a>
+        <a routerLink="/kanban" routerLinkActive="active"><button class="submit-card" (click)="createCard(selectColumn.value,task.value)">Add Card</button></a>
         <br>
     </form>
 </div>

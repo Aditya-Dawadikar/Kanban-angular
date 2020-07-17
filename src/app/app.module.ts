@@ -13,6 +13,7 @@ import { ColumnModalComponent } from './column-modal/column-modal.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AddCardFloatComponent } from './add-card-float/add-card-float.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AddCardFloatComponent } from './add-card-float/add-card-float.component
     ColumnModalComponent,
     LoginComponent,
     SignupComponent,
-    AddCardFloatComponent
+    AddCardFloatComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,

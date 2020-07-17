@@ -70,3 +70,8 @@
 .incomplete {
     background-color: #f5f576;
 }
+
+.in-progress {
+    background-color: #65c9f7;
+    color: white;
+}

@@ -11,6 +11,7 @@ import { COLUMNS } from '../shared/mock-column';
 })
 export class CardModalComponent implements OnInit {
 
+  COLUMNS=COLUMNS;
   newCard={
     columnName:"Todo",
     task:"",
@@ -24,6 +25,7 @@ export class CardModalComponent implements OnInit {
   }
 
   createCard(columnName,task){
+    //console.log(columnName);
     if(COLUMNS.length===0){
       alert("you must add a column first!");
     }else
