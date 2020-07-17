@@ -1,5 +1,5 @@
 export interface Card{
-  columnName:String;
+  columnName:string;
   task:string;
   status:string;
 };

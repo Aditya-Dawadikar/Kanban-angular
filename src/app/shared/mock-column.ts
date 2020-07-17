@@ -2,24 +2,24 @@ import {Column} from './column';
 import {Card} from './card';
 import {CARDS} from './mock-card';
 
-/*
+
 export const COLUMNS:Column[]=[
   {
     columnName:"Todo",
     cards:CARDS,
-    columnType:"Todo"
+    columnType:"incomplete"
   },
   {
     columnName:"Done",
     cards:CARDS,
-    columnType:"Issues"
+    columnType:"complete"
   },
   {
     columnName:"Issues",
     cards:CARDS,
-    columnType:"Completed"
+    columnType:"issue"
   }
 ];
-*/
 
-export const COLUMNS:Column[]=[];
+
+//export const COLUMNS:Column[]=[];

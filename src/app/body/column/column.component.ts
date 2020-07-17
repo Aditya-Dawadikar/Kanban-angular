@@ -30,7 +30,4 @@ export class ColumnComponent implements OnInit {
     console.log(this.cards);
   }
 
-  cancelButton(){
-    this.cards.pop();
-  }
 }

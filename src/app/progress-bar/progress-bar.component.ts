@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {CARDS} from '../shared/mock-card';
+import {CardModalComponent} from '../card-modal/card-modal.component';
+import { Card } from '../shared/card';
 
 @Component({
   selector: 'app-progress-bar',
@@ -7,6 +9,7 @@ import {CARDS} from '../shared/mock-card';
   styleUrls: ['./progress-bar.component.css']
 })
 export class ProgressBarComponent implements OnInit {
+
   Cards=CARDS;
   totalCards:number;
   progressCards:number;
@@ -14,8 +17,8 @@ export class ProgressBarComponent implements OnInit {
   issueCards:number;
   denominator:number
 
-  progressPercentage:number;
-  completePercentage:number;
+  progressPercentage:number=0;
+  completePercentage:number=0;
   issuePercentage:number;
 
   constructor() {

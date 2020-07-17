@@ -1,4 +1,5 @@
 <div class="container">
+    <app-progress-bar></app-progress-bar>
     <ul class="column-container">
         <li *ngFor="let column of Columns">
             <app-column (deleteColumn)="deleteColumn(column)" [column]="column"></app-column>

@@ -1,6 +1,6 @@
 import {Card} from './card';
 
-/*
+
 export const CARDS:Card[]=[
   {
     columnName:"Todo",
@@ -24,6 +24,6 @@ export const CARDS:Card[]=[
     status:"issue"
   }
 ];
-*/
 
-export const CARDS:Card[]=[];
+
+//export const CARDS:Card[]=[];
