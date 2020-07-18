@@ -7,13 +7,13 @@ import { HeaderComponent } from './header/header.component';
 import { ColumnComponent } from './body/column/column.component';
 import { BodyComponent } from './body/body.component';
 import { CardComponent } from './body/column/card/card.component';
-import { AddColumnComponent } from './add-column/add-column.component';
-import { CardModalComponent } from './card-modal/card-modal.component';
-import { ColumnModalComponent } from './column-modal/column-modal.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
-import { AddCardFloatComponent } from './add-card-float/add-card-float.component';
-import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { AddColumnComponent } from './header/add-column/add-column.component';
+import { CardModalComponent } from './body/column/card-modal/card-modal.component';
+import { ColumnModalComponent } from './body/column-modal/column-modal.component';
+import { LoginComponent } from './login-signup/login/login.component';
+import { SignupComponent } from './login-signup/signup/signup.component';
+import { AddCardFloatComponent } from './header/add-card-float/add-card-float.component';
+import { ProgressBarComponent } from './body/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [

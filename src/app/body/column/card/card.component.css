@@ -75,3 +75,14 @@
     background-color: #65c9f7;
     color: white;
 }
+
+.update {
+    padding: 5px;
+    margin: 5px;
+    position: absolute;
+    bottom: 8px;
+    border-style: hidden;
+    background-color: #ffa047;
+    color: white;
+    right: 10%;
+}

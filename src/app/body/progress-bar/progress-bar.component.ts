@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {CARDS} from '../shared/mock-card';
-import {CardModalComponent} from '../card-modal/card-modal.component';
-import { Card } from '../shared/card';
+import {CARDS} from '../../shared/mock-card';
+import {CardModalComponent} from '../column/card-modal/card-modal.component';
+import { Card } from '../../shared/card';
 
 @Component({
   selector: 'app-progress-bar',

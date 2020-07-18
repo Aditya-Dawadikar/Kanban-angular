@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {Card} from '../shared/card';
-import {ColumnComponent} from '../body/column/column.component';
-import {CARDS} from '../shared/mock-card';
-import {COLUMNS} from '../shared/mock-column';
-import { Column } from '../shared/column';
+import {Card} from '../../shared/card';
+import {ColumnComponent} from '../column/column.component';
+import {CARDS} from '../../shared/mock-card';
+import {COLUMNS} from '../../shared/mock-column';
+import { Column } from '../../shared/column';
 
 @Component({
   selector: 'app-column-modal',

@@ -1,9 +1,8 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
-import {Card} from '../shared/card';
-import {ColumnComponent} from '../body/column/column.component';
-import {CARDS} from '../shared/mock-card';
-import { COLUMNS } from '../shared/mock-column';
-import {ProgressBarComponent} from '../progress-bar/progress-bar.component';
+import {Card} from '../../../shared/card';
+import {CARDS} from '../../../shared/mock-card';
+import { COLUMNS } from '../../../shared/mock-column';
+import {ProgressBarComponent} from '../../progress-bar/progress-bar.component';
 
 @Component({
   selector: 'app-card-modal',
@@ -11,8 +10,6 @@ import {ProgressBarComponent} from '../progress-bar/progress-bar.component';
   styleUrls: ['./card-modal.component.css']
 })
 export class CardModalComponent implements OnInit {
-
-  progressInstance = new ProgressBarComponent();
 
   COLUMNS=COLUMNS;
   newCard={
@@ -38,8 +35,6 @@ export class CardModalComponent implements OnInit {
       let index = COLUMNS.findIndex(column => column.columnName ===columnName);
       this.newCard.status=COLUMNS[index].columnType;
       CARDS.push(this.newCard);
-
-      this.progressInstance.calculate();
     }else{
       alert("Card must belong to a column");
     }
