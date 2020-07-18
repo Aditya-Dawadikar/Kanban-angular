@@ -53,6 +53,7 @@ select {
     box-shadow: 5px 10px 10px #888888;
     border-radius: 20px;
     transition: scale 1s ease-in-out;
+    cursor: pointer;
 }
 
 .submit-card:hover {
@@ -78,6 +79,7 @@ select {
     transform: scale(0.5);
     transition: scale 0.5s ease-out, opacity 0.1s ease;
     z-index: 1;
+    cursor: pointer;
 }
 
 .cancel-button:hover {
