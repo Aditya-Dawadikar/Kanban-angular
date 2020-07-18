@@ -2,7 +2,7 @@ import {Column} from './column';
 import {Card} from './card';
 import {CARDS} from './mock-card';
 
-
+/*
 export const COLUMNS:Column[]=[
   {
     columnName:"Todo",
@@ -20,6 +20,6 @@ export const COLUMNS:Column[]=[
     columnType:"issue"
   }
 ];
+*/
 
-
-//export const COLUMNS:Column[]=[];
+export const COLUMNS:Column[]=[];

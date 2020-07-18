@@ -83,12 +83,3 @@
     opacity: 1;
     transform: scale(1);
 }
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: flex;
-    flex-direction: column;
-}

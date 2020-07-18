@@ -1,9 +1,6 @@
 import { Component, OnInit,Output, EventEmitter, Input } from '@angular/core';
-import {CardComponent} from './card/card.component';
 import {CARDS} from '../../shared/mock-card';
-import {Card} from '../../shared/card';
 import {Column} from '../../shared/column';
-import {BodyComponent} from '../body.component';
 
 @Component({
   selector: 'app-column',
@@ -12,22 +9,22 @@ import {BodyComponent} from '../body.component';
 })
 export class ColumnComponent implements OnInit {
 
-  cards=CARDS;
-
   @Output() deleteColumn = new EventEmitter();
   @Output() addCardEmitter = new EventEmitter();
   @Input() column:Column;
+
+  cards=CARDS;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  deleteCard(card){
+  deleteCardFromArray(card){
     let index=this.cards.indexOf(card);
-    console.log("index:"+index);
+    //console.log("index:"+index);
     this.cards.splice(index,1);
-    console.log(this.cards);
+    //console.log(this.cards);
   }
 
 }
