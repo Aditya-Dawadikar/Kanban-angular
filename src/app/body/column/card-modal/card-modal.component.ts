@@ -28,12 +28,10 @@ export class CardModalComponent implements OnInit {
       alert("you must add a column first!");
     }else
     if(columnName!=""){
-      //initialize new card
       this.newCard.task=task;
       this.newCard.columnName=columnName;
       let index = COLUMNS.findIndex(column => column.columnName ===columnName);
       this.newCard.status=COLUMNS[index].columnType;
-      //add new card to array
       CARDS.push(this.newCard);
     }else{
       alert("Card must belong to a column");

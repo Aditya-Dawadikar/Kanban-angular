@@ -27,4 +27,5 @@ export class ColumnComponent implements OnInit {
     //console.log(this.cards);
   }
 
+  updateColumn(columnName,columnType){}
 }
