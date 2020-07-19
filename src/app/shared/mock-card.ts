@@ -1,6 +1,6 @@
 import {Card} from './card';
 
-
+/*
 export const CARDS:Card[]=[
   {
     columnName:"Todo",
@@ -19,11 +19,11 @@ export const CARDS:Card[]=[
     task:"slit your throat",
     status:"complete"
   },{
-    columnName:"Issues",
+    columnName:"Progress",
     task:"water leakage",
-    status:"issue"
+    status:"in-progress"
   }
 ];
+*/
 
-
-//export const CARDS:Card[]=[];
+export const CARDS:Card[]=[];

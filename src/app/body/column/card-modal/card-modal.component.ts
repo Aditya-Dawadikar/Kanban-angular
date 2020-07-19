@@ -1,4 +1,6 @@
 import { Component, OnInit} from '@angular/core';
+import {ProgressStatusService} from '../../../services/progress-status.service';
+
 import {CARDS} from '../../../shared/mock-card';
 import { COLUMNS } from '../../../shared/mock-column';
 import { Card } from 'src/app/shared/card';
@@ -18,7 +20,7 @@ export class CardModalComponent implements OnInit {
   };
   public tohide=false;
 
-  constructor() { }
+  constructor(private progressStatus:ProgressStatusService) { }
 
   ngOnInit(): void {
   }
@@ -33,9 +35,13 @@ export class CardModalComponent implements OnInit {
       let index = COLUMNS.findIndex(column => column.columnName ===columnName);
       this.newCard.status=COLUMNS[index].columnType;
       CARDS.push(this.newCard);
+
+      //call the update method to update the progessbar
+      this.progressStatus.updateProgress(this.newCard);
     }else{
       alert("Card must belong to a column");
     }
   }
+
 
 }
