@@ -12,7 +12,9 @@
 
 .column-header {
     width: 100%;
-    background-color: #2b6fa6;
+    /*background-color: #2b6fa6;*/
+    /*background-color: #03fc8c;*/
+    background: linear-gradient(to bottom right, #91fad7, #31f77d);
     min-height: 50px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
